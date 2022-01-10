@@ -1,0 +1,8 @@
+{
+    "dataset_name": "scrolls",
+    "dataset_config_name": "summ_screen_fd",
+    "num_train_epochs": 10,
+    "metric_names": ["rouge"],
+    "metric_for_best_model": "rouge/geometric_mean",
+    "greater_is_better": true
+}

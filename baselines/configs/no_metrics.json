@@ -1,0 +1,6 @@
+{
+    "metric_names": [],
+    "metric_for_best_model": "loss",
+    "greater_is_better": false,
+    "drop_duplicates_in_eval": false
+}
