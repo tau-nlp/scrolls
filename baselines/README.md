@@ -43,7 +43,7 @@ The options for `model` are:
 ```
 
 Notes:
-- All of the experiments were run with 8 NVIDIA V100 GPUs. For other GPUs you will probably have to change the number of tokens in batch per GPU, `tokens_bsz` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py#L14)), to prevent OOM error.
+- In our experiments we used 8 NVIDIA V100 GPUs for training. If you get OOM errors, you can try reducing the max number of tokens per GPU in a batch, `tokens_bsz` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py#L14)).
 - Change `num_gpus` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py#L15)) to control the number of GPUs used.
 - It's possible to evaluate the dataset metrics on the validation set in each epoch by changing `generate_in_eval` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py#L19)) to `True`.
 
