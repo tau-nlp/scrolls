@@ -1,11 +1,11 @@
 # SCROLLS
 
-This repository contains the official code of the paper: ["SCROLLS: Standardized CompaRison Over Long Language Sequences"](https://arxiv.org/abs/2201.03533).
+This repository contains the official code of the paper: ["SCROLLS: Standardized CompaRison Over Long Language Sequences"](https://arxiv.org/pdf/2201.03533.pdf).
 
 ### Links
 - [Official Website](scrolls-benchmark.com)  
-- [Baselines](https://github.com/eladsegal/longer/tree/clean/baselines)  
-- [Evaluator](https://github.com/eladsegal/longer/tree/clean/evaluator)  
+- [Baselines](https://github.com/tau-nlp/scrolls/tree/main/baselines)  
+- [Evaluator](https://github.com/tau-nlp/scrolls/tree/main/evaluator)  
 
 ### Citation
 ```
