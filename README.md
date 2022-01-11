@@ -1,6 +1,6 @@
 # SCROLLS
 
-This repository contains the official code of the paper: ["SCROLLS: Standardized CompaRison Over Long Language Sequences"](https://arxiv.org/abs/?).
+This repository contains the official code of the paper: ["SCROLLS: Standardized CompaRison Over Long Language Sequences"](https://arxiv.org/abs/2201.03533).
 
 ### Links
 - [Official Website](scrolls-benchmark.com)  
@@ -9,12 +9,13 @@ This repository contains the official code of the paper: ["SCROLLS: Standardized
 
 ### Citation
 ```
-@article{shaham2022scrolls,
-  title={SCROLLS: Standardized CompaRison Over Long Language Sequences},
-  author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/TODO}
+@misc{shaham2022scrolls,
+      title={SCROLLS: Standardized CompaRison Over Long Language Sequences}, 
+      author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
+      year={2022},
+      eprint={2201.03533},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
