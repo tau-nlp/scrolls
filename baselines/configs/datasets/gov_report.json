@@ -1,5 +1,5 @@
 {
-    "dataset_name": "scrolls",
+    "dataset_name": "tau/scrolls",
     "dataset_config_name": "gov_report",
     "num_train_epochs": 10,
     "metric_names": ["rouge"],

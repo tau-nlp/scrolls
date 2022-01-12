@@ -1,5 +1,5 @@
 {
-    "dataset_name": "scrolls",
+    "dataset_name": "tau/scrolls",
     "dataset_config_name": "narrative_qa",
     "num_train_epochs": 2,
     "metric_names": ["rouge"],
