@@ -124,22 +124,27 @@ def get_command(id_):
 
     for dataset in ["qasper", "narrative_qa", "gov_report", "summ_screen_fd", "qmsum", "contract_nli", "quality"]:
 
-        base_args = [f"python {distributed_str} src/run.py configs/train.json",
-                     f"--m configs/datasets/{dataset}.json",
-                     "--adam_epsilon 1e-6",
-                     "--adam_beta1 0.9",
-                     "--adam_beta2 0.98",
-                     "--weight_decay 0.001",
-                     "--logging_steps 10",
-                     "--gradient_checkpointing true",
-                     "--save_total_limit 2",
-                     "--preprocessing_num_workers 1",
-                     "--group_by_length true",
-                     "--do_eval True",
-                     "--load_best_model_at_end True",
-                     "--lr_scheduler linear",
-                     "--warmup_ratio 0.1",
-                     ] + (["--m configs/no_metrics.json", "--predict_with_generate False"] if not generate_in_eval else [])
+        base_args = [
+            f"python {distributed_str} src/run.py configs/train.json",
+            f"--m configs/datasets/{dataset}.json",
+            "--adam_epsilon 1e-6",
+            "--adam_beta1 0.9",
+            "--adam_beta2 0.98",
+            "--weight_decay 0.001",
+            "--logging_steps 10",
+            "--gradient_checkpointing true",
+            "--save_total_limit 2",
+            "--preprocessing_num_workers 1",
+            "--group_by_length true",
+            "--do_eval True",
+            "--load_best_model_at_end True",
+            "--lr_scheduler linear",
+            "--warmup_ratio 0.1",
+        ] + (
+            ["--m configs/no_metrics.json", "--predict_with_generate False", "prediction_loss_only True"]
+            if not generate_in_eval
+            else []
+        )
         if dataset == "narrative_qa":
             base_args.append("--trim_very_long_strings")
 
