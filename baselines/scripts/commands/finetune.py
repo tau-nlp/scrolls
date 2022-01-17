@@ -141,7 +141,7 @@ def get_command(id_):
             "--lr_scheduler linear",
             "--warmup_ratio 0.1",
         ] + (
-            ["--m configs/no_metrics.json", "--predict_with_generate False", "prediction_loss_only True"]
+            ["--m configs/no_metrics.json", "--predict_with_generate False", "--prediction_loss_only True"]
             if not generate_in_eval
             else []
         )
