@@ -21,7 +21,7 @@ The evaluation is conducted in a Python 3.8 environment.
 To clone the repository and set up the environment, please run the following commands:
 ```
 git clone https://github.com/tau-nlp/scrolls.git
-cd scrolls/baselines
+cd scrolls/evaluator
 pip install -r requirements.txt
 ```
 
