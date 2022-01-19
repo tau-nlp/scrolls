@@ -1,4 +1,4 @@
-git+http://github.com/eladsegal/public-transformers@c6e6f108e97e404e41e81ffa6b6f873fa8b03126#egg=transformers  # https://github.com/eladsegal/public-transformers/tree/scrolls
+git+http://github.com/eladsegal/public-transformers@scrolls#egg=transformers  # https://github.com/eladsegal/public-transformers/tree/scrolls
 datasets==1.17.0
 wandb
 sentencepiece
