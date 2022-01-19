@@ -89,7 +89,7 @@ def main():
     assert recovered_tasks_dfs.columns.tolist() == tasks_dfs.columns.tolist()
     assert np.all(recovered_tasks_dfs.values == tasks_dfs.values)
 
-    print(f"Your submission file is ready. Please head over to {SUBMISSION_LINK} to submit your predictions")
+    print(f"Your benchmark predictions file is ready. If it contains predictions for the test sets please head over to {SUBMISSION_LINK} to submit to the SCROLLS leaderboard.")
 
 
 if __name__ == "__main__":
