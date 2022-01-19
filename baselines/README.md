@@ -12,7 +12,6 @@ Following are instructions to reproduce the experiments reported in the paper, o
 
 *** 
 ## Setup
-### Requirements
 
 Our experiments were conducted in a Python 3.8 environment.
 To clone the repository and set up the environment, please run the following commands:
