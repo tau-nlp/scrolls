@@ -132,3 +132,5 @@ dmypy.json
 .idea/
 *.lock
 wandb
+
+baselines/outputs/*
