@@ -13,6 +13,7 @@ def get_command(id_):
     split_id = id_.split("$$$")
     checkpoint_path = split_id[1]
     id_ = split_id[0]
+    num_gpus = 1
 
     fb_256_bart_args = [
         f"--max_source_length 256",
@@ -39,8 +40,9 @@ def get_command(id_):
         f"--fp16 {ALLEN_AI_FP16}",
         f"--per_device_eval_batch_size {ALLEN_AI_per_device_eval_batch_size}",
     ]
+    distributed_str = f"-m torch.distributed.run --nproc_per_node={num_gpus}" if num_gpus > 1 else ""
     for dataset in ["qasper", "narrative_qa", "gov_report", "summ_screen_fd", "qmsum", "contract_nli", "quality", "quality_difficult"]:
-        base_args = [f"python src/run.py",
+        base_args = [f"python {distributed_str} src/run.py",
                      f"configs/datasets/{dataset}.json",
                      f"--model_name_or_path {checkpoint_path}",
                      "--m configs/no_metrics.json",

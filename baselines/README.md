@@ -62,6 +62,9 @@ The options for `split` are:
 ```
 ["validation", "test"]
 ```
+Notes:
+- If you get OOM errors, you can try reducing the eval batch size, `FB_BART_per_device_eval_batch_size` or `ALLEN_AI_per_device_eval_batch_size` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/consts.py)).
+- Change `num_gpus` ([here](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/generate.py#L16)) to control the number of GPUs used.
 
 ***
 ## Evaluate
