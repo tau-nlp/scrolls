@@ -26,6 +26,10 @@ pip install -r requirements.txt
 ## Train
 [scripts/commands/finetune.py](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py) includes the construction all of the commands used for the experiments in the paper.
 
+To prepare and cache a dataset (once per model and dataset):
+```
+python scripts/execute.py scripts/commands/finetune.py {dataset}_{model}_data
+```
 To run fine-tuning:
 ```
 python scripts/execute.py scripts/commands/finetune.py {dataset}_{model}
