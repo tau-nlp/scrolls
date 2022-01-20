@@ -6,7 +6,6 @@ import re
 import shlex
 import copy
 import collections
-import subprocess
 
 from src.utils.output_dir import get_experiment_name_and_output_dir
 from src.utils.config import handle_config
@@ -24,8 +23,7 @@ def get_command_from_command_parts(command_parts):
 
 
 def get_command_split_from_command(command: str):
-    if not has_slurm():
-        command = command.replace("python -m", "python", 1)
+    command = command.replace("python -m", "python", 1)
     return shlex.split(command)
 
 
@@ -113,6 +111,3 @@ def prep_command(command_parts):
         "output_dir": output_dir,
     }
 
-
-def has_slurm():
-    return subprocess.run("sinfo", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True).returncode == 0
