@@ -102,7 +102,9 @@ def main(args):
             assert len(metrics) > 0
 
     if args.verify_only:
-        log.info("The verification was succesful.")
+        if not args.internal_call:
+            print("The verification was succesful.")
+        sys.exit()
 
     log.info(f"Computing the aggregated score")
     scrolls_metrics["scrolls_score"] = sum([scrolls_metrics[task]["scrolls_score"] for task in EXPECTED_TASKS]) / len(
