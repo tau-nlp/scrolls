@@ -70,6 +70,9 @@ def main(args):
                     log.exception(f"Failed to process task: {task} for submission")
                     raise ValueError(f"Format of submission for task {task} is invalid: {e}")
 
+            if args.verify_only:
+                continue
+
             metric_file = get_metrics_filename(args.metrics_output_dir, evaluator_obj.dataset_name)
             if not os.path.exists(metric_file):
                 if args.internal_call:
@@ -97,6 +100,9 @@ def main(args):
                 f"Finished evaluating task {task} on dataset name {dataset_name} in {time()-t0:.1f} seconds with scores: {metrics}"
             )
             assert len(metrics) > 0
+
+    if args.verify_only:
+        log.info("The verification was succesful.")
 
     log.info(f"Computing the aggregated score")
     scrolls_metrics["scrolls_score"] = sum([scrolls_metrics[task]["scrolls_score"] for task in EXPECTED_TASKS]) / len(
