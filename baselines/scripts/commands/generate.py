@@ -49,6 +49,7 @@ def get_command(id_):
                      "--logging_steps 10",
                      "--preprocessing_num_workers 1",
                      "--predict_with_generate True",
+                     "--drop_duplicates_in_eval True",
                      "--num_beams 1",
                      ]
 
