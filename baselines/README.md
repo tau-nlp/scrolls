@@ -13,7 +13,10 @@ Following are instructions to reproduce the experiments reported in the paper, o
 *** 
 ## Setup
 
-Our experiments were conducted in a Python 3.8 environment.
+Prerequisites:
+- python 3.8
+- git version >= 2.17.1
+
 To clone the repository and set up the environment, please run the following commands:
 ```
 git clone https://github.com/tau-nlp/scrolls.git
@@ -25,6 +28,11 @@ pip install -r requirements.txt
 ***
 ## Train
 [scripts/commands/finetune.py](https://github.com/tau-nlp/scrolls/blob/main/baselines/scripts/commands/finetune.py) includes the construction all of the commands used for the experiments in the paper.
+
+We suggest setting `XDG_CACHE_HOME` to the path you want to download the data and pretrained models to:
+```
+export XDG_CACHE_HOME=/your/path/here
+```
 
 To prepare and cache a dataset (once per model and dataset):
 ```

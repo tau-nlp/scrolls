@@ -3,6 +3,5 @@
     "save_strategy": "epoch",
     "do_eval": true,
     "evaluation_strategy": "epoch",
-    "predict_with_generate": true,
-    "report_to": "wandb"
+    "predict_with_generate": true
 }

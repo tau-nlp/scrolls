@@ -11,7 +11,10 @@ This folder contains instructions to
 *** 
 ## Setup
 
-The evaluation is conducted in a Python 3.8 environment.
+Prerequisites:
+- python 3.8
+- git version >= 2.17.1
+
 To clone the repository and set up the environment, please run the following commands:
 ```
 git clone https://github.com/tau-nlp/scrolls.git

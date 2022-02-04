@@ -2,22 +2,9 @@
 
 This repository contains the official code of the paper: ["SCROLLS: Standardized CompaRison Over Long Language Sequences"](https://arxiv.org/abs/2201.03533).
 
-### Links
-- [Official Website](https://scrolls-benchmark.com/)  
-- [Baselines](https://github.com/tau-nlp/scrolls/tree/main/baselines)  
-- [Evaluator](https://github.com/tau-nlp/scrolls/tree/main/evaluator)  
+Setup instructions are in the [baselines](https://github.com/tau-nlp/scrolls/tree/main/baselines)   and [evaluator](https://github.com/tau-nlp/scrolls/tree/main/evaluator)   folders. 
 
-### Citation
-```
-@misc{shaham2022scrolls,
-      title={SCROLLS: Standardized CompaRison Over Long Language Sequences}, 
-      author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
-      year={2022},
-      eprint={2201.03533},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
+For the live leaderboard, checkout the [official website](https://scrolls-benchmark.com/). 
 
 ***
 ## Loading the SCROLLS Benchmark Datasets
@@ -42,3 +29,17 @@ This repository contains the official code of the paper: ["SCROLLS: Standardized
   - [Qasper](https://scrolls-tau.s3.us-east-2.amazonaws.com/qasper.zip)
   - [QuALITY](https://scrolls-tau.s3.us-east-2.amazonaws.com/quality.zip)
   - [ContractNLI](https://scrolls-tau.s3.us-east-2.amazonaws.com/contract_nli.zip)
+
+
+## Citation
+```
+@misc{shaham2022scrolls,
+      title={SCROLLS: Standardized CompaRison Over Long Language Sequences}, 
+      author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
+      year={2022},
+      eprint={2201.03533},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+When citing SCROLLS, please make sure to cite all of the original dataset papers. [[bibtex]](https://scrolls-tau.s3.us-east-2.amazonaws.com/scrolls_datasets.bib)
