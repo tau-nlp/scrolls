@@ -2,7 +2,7 @@
     "dataset_name": "tau/scrolls",
     "dataset_config_name": "narrative_qa",
     "num_train_epochs": 2,
-    "metric_names": ["rouge"],
-    "metric_for_best_model": "rouge/geometric_mean",
+    "metric_names": ["f1"],
+    "metric_for_best_model": "f1",
     "greater_is_better": true
 }
