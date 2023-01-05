@@ -33,13 +33,11 @@ For the live leaderboard, checkout the [official website](https://scrolls-benchm
 
 ## Citation
 ```
-@misc{shaham2022scrolls,
-      title={SCROLLS: Standardized CompaRison Over Long Language Sequences}, 
+@inproceedings{shaham2022scrolls,
+      title={{SCROLLS}: Standardized CompaRison Over Long Language Sequences}, 
       author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
-      year={2022},
-      eprint={2201.03533},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      booktitle={EMNLP},
+      year={2022}
 }
 ```
 When citing SCROLLS, please make sure to cite all of the original dataset papers. [[bibtex]](https://scrolls-tau.s3.us-east-2.amazonaws.com/scrolls_datasets.bib)
