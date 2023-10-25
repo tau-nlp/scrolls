@@ -4,6 +4,8 @@ wandb
 sentencepiece
 git+http://github.com/pytorch/fairseq@f6abcc2a67328bee8b15c596bb626ce2d720aae6#egg=fairseq  # For smart batching
 plotly==5.3.1
+dill==0.3.4
+multiprocess==0.70.12.2
 
 # METRICS:
 # ROUGE
