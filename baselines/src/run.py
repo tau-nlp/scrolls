@@ -682,6 +682,7 @@ def main():
                 output_prediction_file = os.path.join(training_args.output_dir, "generated_predictions.json")
                 with open(output_prediction_file, "w") as writer:
                     json.dump(predictions, writer, indent=4)
+                logger.info(f"Predictions saved to {output_prediction_file}")
 
     if training_args.push_to_hub:
         kwargs = {"finetuned_from": model_args.model_name_or_path, "tasks": "summarization"}

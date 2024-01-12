@@ -33,13 +33,26 @@ For the live leaderboard, checkout the [official website](https://scrolls-benchm
 
 ## Citation
 ```
-@misc{shaham2022scrolls,
-      title={SCROLLS: Standardized CompaRison Over Long Language Sequences}, 
-      author={Uri Shaham and Elad Segal and Maor Ivgi and Avia Efrat and Ori Yoran and Adi Haviv and Ankit Gupta and Wenhan Xiong and Mor Geva and Jonathan Berant and Omer Levy},
-      year={2022},
-      eprint={2201.03533},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{shaham-etal-2022-scrolls,
+    title = "{SCROLLS}: Standardized {C}ompa{R}ison Over Long Language Sequences",
+    author = "Shaham, Uri  and
+      Segal, Elad  and
+      Ivgi, Maor  and
+      Efrat, Avia  and
+      Yoran, Ori  and
+      Haviv, Adi  and
+      Gupta, Ankit  and
+      Xiong, Wenhan  and
+      Geva, Mor  and
+      Berant, Jonathan  and
+      Levy, Omer",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.823",
+    pages = "12007--12021",
 }
 ```
 When citing SCROLLS, please make sure to cite all the original dataset papers. [[bibtex]](https://github.com/tau-nlp/scrolls/tree/main/scrolls_datasets.bib)
