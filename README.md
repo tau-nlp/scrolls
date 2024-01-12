@@ -22,13 +22,13 @@ For the live leaderboard, checkout the [official website](https://scrolls-benchm
         """
         ```
 - via ZIP files, where each split is in a JSONL file:
-  - [GovReport](https://scrolls-tau.s3.us-east-2.amazonaws.com/gov_report.zip)
-  - [SummScreenFD](https://scrolls-tau.s3.us-east-2.amazonaws.com/summ_screen_fd.zip)
-  - [QMSum](https://scrolls-tau.s3.us-east-2.amazonaws.com/qmsum.zip)
-  - [NarrativeQA](https://scrolls-tau.s3.us-east-2.amazonaws.com/narrative_qa.zip)
-  - [Qasper](https://scrolls-tau.s3.us-east-2.amazonaws.com/qasper.zip)
-  - [QuALITY](https://scrolls-tau.s3.us-east-2.amazonaws.com/quality.zip)
-  - [ContractNLI](https://scrolls-tau.s3.us-east-2.amazonaws.com/contract_nli.zip)
+  - [GovReport](https://huggingface.co/datasets/tau/scrolls/resolve/main/gov_report.zip)
+  - [SummScreenFD](https://huggingface.co/datasets/tau/scrolls/resolve/main/summ_screen_fd.zip)
+  - [QMSum](https://huggingface.co/datasets/tau/scrolls/resolve/main/qmsum.zip)
+  - [NarrativeQA](https://huggingface.co/datasets/tau/scrolls/resolve/main/narrative_qa.zip)
+  - [Qasper](https://huggingface.co/datasets/tau/scrolls/resolve/main/qasper.zip)
+  - [QuALITY](https://huggingface.co/datasets/tau/scrolls/resolve/main/quality.zip)
+  - [ContractNLI](https://huggingface.co/datasets/tau/scrolls/resolve/main/contract_nli.zip)
 
 
 ## Citation
@@ -42,4 +42,4 @@ For the live leaderboard, checkout the [official website](https://scrolls-benchm
       primaryClass={cs.CL}
 }
 ```
-When citing SCROLLS, please make sure to cite all of the original dataset papers. [[bibtex]](https://scrolls-tau.s3.us-east-2.amazonaws.com/scrolls_datasets.bib)
+When citing SCROLLS, please make sure to cite all the original dataset papers. [[bibtex]](https://github.com/tau-nlp/scrolls/tree/main/scrolls_datasets.bib)
